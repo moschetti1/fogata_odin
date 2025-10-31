@@ -55,7 +55,7 @@ load_assets :: proc() -> Assets {
 unload_assets :: proc(assets: ^Assets) {
 	rl.UnloadTexture(assets.atlas)
 	rl.UnloadMusicStream(assets.work_sound)
-	rl.UnloadMusicStream(assets.cricket_sound)
-	rl.UnloadSound(assets.keystroke_sound)
+	// rl.UnloadMusicStream(assets.cricket_sound)
+	// rl.UnloadSound(assets.keystroke_sound)
 }
 

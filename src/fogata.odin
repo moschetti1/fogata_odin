@@ -116,6 +116,8 @@ transition_to :: proc(app: ^App, target_state: FogataState) {
 update_app :: proc(app: ^App, dt: f32) {
 	if app.paused do return
 
+	update_sound_manager(&app.sound_manager)
+
 	player := &app.animation_player
 
 	switch app.state {

@@ -46,3 +46,7 @@ update_crickets_volume :: proc(manager: ^SoundManager, vol: f32) {
 	}
 }
 
+update_sound_manager :: proc(manager: ^SoundManager) {
+	rl.UpdateMusicStream(manager.campfire_music)
+}
+
