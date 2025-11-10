@@ -20,8 +20,6 @@ main :: proc() {
 		return
 	}
 
-	fmt.println("Audio device ready!")
-
 	rl.InitWindow(ScreenWidth, ScreenHeight, "Fogata")
 	rl.SetTargetFPS(60)
 
