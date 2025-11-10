@@ -19,6 +19,7 @@ update_pomodoro :: proc(timer: ^Pomodoro, dt: f32, app: ^App) {
 			timer.pomodoros_completed += 1
 			timer.current_cycle += 1
 			if timer.current_cycle >= app.settings.pomodoros_until_long_break {
+				timer.current_cycle = 0
 				transition_to(app, .LongBreak)
 			} else {
 				transition_to(app, .ShortBreak)
